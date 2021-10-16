@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reinis Riekstins CV</title>
+
+    <!-- Favicon Stuffs -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <!-- Material Icons, see: https://material.io/resources/icons/?icon=work&style=sharp -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Normalization stuffs -->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+
+    <!-- Product Sans Font -->
+    <link rel="stylesheet" type="text/css" href="styles/product-sans-font.css" />
+
+    <style>
+      :root {
+        --primary-color: #fff;
+        --secondary-color: hsl(216, 100%, 63%);
+        --tertiary-color: #d3d3d3;
+        --heading-font-size: 1.8rem;
+      }
+      @media print {
+        :root {
+          --primary-color: black;
+          --secondary-color: black;
+          --tertiary-color: black;
+          --heading-font-size: 1.3rem;
+        }
+      }
+      body {
+        font-family: "Product Sans", Arial;
+        font-size: 17px;
+        letter-spacing: 0.02em;
+        background: linear-gradient(180deg, #232323 0%, #1a1a1a 55.22%);
+        overscroll-behavior: none;
+      }
+      @media print {
+        body {
+          filter: grayscale(100%);
+          font-size: 12px;
+          background: white;
+        }
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      *::selection {
+        background: var(--secondary-color);
+        color: var(--primary-color);
+      }
+      a,
+      a:visited {
+        text-decoration: none;
+      }
+      a {
+        display: block;
+        transition: transform 200ms ease-out;
+      }
+      img {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-drag: none;
+        -moz-user-drag: none;
+      }
+      .img-icon {
+        height: 30px;
+        width: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      .cv {
+        width: 1280px;
+        margin: auto;
+        display: flex;
+      }
+      @media (max-width: 1280px) {
+        .cv {
+          width: 1024px;
+        }
+      }
+      @media (max-width: 1024px) {
+        .cv {
+          width: 100vw;
+        }
+      }
+      @media print {
+        .cv {
+          width: 100vw;
+          margin: 0;
+        }
+      }
+    </style>
+    <div class="cv">
+      <style>
+        aside {
+          color: var(--primary-color);
+          flex: 3.5;
+          background: linear-gradient(180deg, #2d2d2d 0%, #181818 91.56%);
+        }
+        @media print {
+          aside {
+            background: #eee;
+            flex: 1;
+          }
+        }
+        .profile-image {
+          width: 100%;
+          height: auto;
+          /* filter: grayscale(100%); */
+        }
+
+        .profile-img-gradient {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(29, 29, 29, 0) 35.53%,
+            rgba(29, 29, 29, 0.84) 75%,
+            #242424 99%
+          );
+          /* background: linear-gradient(180deg, hsla(0, 0%, 14%, 0) 0%, hsla(0, 0%, 14%, 0.4) 70%, #232323 95%); */
+        }
+        @media (max-width: 1280px) {
+          .profile-img-gradient {
+            background: linear-gradient(
+              180deg,
+              rgba(29, 29, 29, 0) 35.53%,
+              rgba(29, 29, 29, 0.84) 75%,
+              #272727 99%
+            );
+          }
+        }
+        @media (max-width: 768px) {
+          .profile-img-gradient {
+            background: linear-gradient(
+              180deg,
+              rgba(29, 29, 29, 0) 35.53%,
+              rgba(29, 29, 29, 0.84) 75%,
+              #282828 99%
+            );
+          }
+        }
+        @media print {
+          .profile-img-gradient {
+            display: none;
+          }
+        }
+      </style>
+      <aside>
+        <!-- Profile Image -->
+        <div style="position: relative;">
+          <!-- The Image -->
+          <img
+            src="assets/img/profile-image.jpg"
+            class="profile-image"
+          />
+
+          <!-- The Gradient -->
+          <div class="profile-img-gradient"></div>
+
+          <div style="position: absolute; bottom: 50px; left: 0; right: 0;">
+            <style>
+              .reinis-riekstins-wrapper {
+                position: relative;
+                top: -25px;
+              }
+              .reinis-riekstins {
+                text-align: center;
+                font-size: 2.6rem;
+                margin: 0;
+              }
+              .software-developer {
+                position: relative;
+                top: -5px;
+                color: var(--secondary-color);
+                font-size: 1.4rem;
+                font-weight: normal;
+                text-align: center;
+                margin: 0;
+              }
+              .aside-lower-content-wrapper {
+                position: relative;
+                top: -25px;
+                margin: 0 25px;
+              }
+              @media (max-width: 1280px) {
+                .reinis-riekstins {
+                  font-size: 2.2rem;
+                }
+                .software-developer {
+                  font-size: 1.2rem;
+                }
+              }
+              @media print {
+                .reinis-riekstins-wrapper {
+                  top: 0;
+                  background:	hsla(0, 0%, 13%, 0.7);
+                }
+                .reinis-riekstins {
+                  color: #e1e1e1;
+                  font-size: var(--heading-font-size);
+                }
+                .software-developer {
+                  color: #e1e1e1;
+                  font-size: 1.1rem;
+                }
+                .aside-lower-content-wrapper {
+                  top: 0;
+                }
+              }
+
+              .anchor-icon {
+                transition: transform 200ms ease-out;
+                color: var(--secondary-color);
+                margin-right: 10px;
+              }
+              .anchor-text {
+                transition: color 200ms ease-out;
+                color: var(--tertiary-color);
+                display: inline-block;
+              }
+              a:hover .anchor-icon {
+                transform: scale(1.08, 1.08);
+              }
+              a:hover .anchor-text {
+                color: var(--primary-color);
+              }
+            </style>
+            <div class="reinis-riekstins-wrapper">
+              <h1 class="reinis-riekstins">
+                Reinis Riekstins
+              </h1>
+              <h3 class="software-developer">
+                Software Developer
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="aside-lower-content-wrapper">
+
+           <section>
+            <h3 style="font-size: var(--heading-font-size); margin-top: 0; margin-bottom: 20px;">
+              Summary
+            </h3>
+            <p style="color: var(--tertiary-color); margin-left: 5px;">
+              A passionate developer and creative problem solver who cares deeply about creating a great product.
+            </p>
+          </section>
+          <section>
+            <h3 style="font-size: var(--heading-font-size); margin-bottom: 20px;">
+              Contact
+            </h3>
+            <a href="tel:+37126432908" style="margin-left: 5px; display: inline-block;">
+              <div style="display: flex; align-items: center;">
+                <i
+                  class="material-icons-sharp anchor-icon"
+                  style="font-size: 28px;"
+                >
+                  phone
+                </i>
+                <span
+                  class="anchor-text"
+                  >(+371) 26432908</span
+                >
+              </div>
+            </a>
+            <a
+              href="mailto:riekstins.reinis@gmail.com"
+              target="_blank"
+              rel="noopener"
+              style="margin-left: 5px; display: inline-block;"
+            >
+              <div style="display: flex; align-items: center;">
+                <i
+                  class="material-icons-sharp anchor-icon"
+                  style="font-size: 28px;"
+                  >mail</i
+                >
+                <span
+                class="anchor-text"
+                  >riekstins.reinis@gmail.com</span
+                >
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/reinis-riekstins-288447138/"
+              target="_blank"
+              rel="noopener"
+              style="margin-left: 5px; display: inline-block;"
+            >
+              <div style="display: flex; align-items: center;">
+                <i 
+                  class="fab fa-linkedin-in anchor-icon"
+                  style="font-size: 23px; width: 30px; text-align: center; color: var(--secondary-color); margin-right: 8px;"
+                ></i>
+                <!-- <i
+                  class="material-icons-sharp anchor-icon"
+                  style="font-size: 28px;"
+                  >mail</i
+                > -->
+                <span
+                class="anchor-text"
+                  >LinkedIn</span
+                >
+              </div>
+            </a>
+          </section>
+
+          <section>
+            <h3 style="font-size: var(--heading-font-size); margin-bottom: 20px;">
+              Language Skills
+            </h3>
+            <table style="margin-left: 5px;">
+              <tr>
+                <td>
+                  <span
+                    style="color: var(--tertiary-color); margin-right: 10px;"
+                    >Latvian</span
+                  >
+                </td>
+                <td>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    style="color: var(--tertiary-color); margin-right: 10px;"
+                    >English</span
+                  >
+                </td>
+                <td>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    style="color: var(--tertiary-color); margin-right: 10px;"
+                    >Russian</span
+                  >
+                </td>
+                <td>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star_outline
+                  </i>
+                  <i
+                    class="material-icons-sharp"
+                    style="color: var(--secondary-color)"
+                  >
+                    star_outline
+                  </i>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+          <section>
+            <h3 style="font-size: var(--heading-font-size); margin-bottom: 20px;">
+              Hobbies
+            </h3>
+            <a
+              href="https://www.flickr.com/photos/reinis-riekstins/albums"
+              target="_blank"
+              rel="noopener"
+              style="margin-left: 5px; display: inline-block;"
+            >
+              <div style="display: flex; align-items: center;">
+                <i
+                  class="material-icons-sharp anchor-icon"
+                  style="font-size: 28px;"
+                >
+                  photo_camera
+                </i>
+                <span class="anchor-text">Photography</span>
+              </div>
+            </a>
+            <div style="display: flex; align-items: center; margin-left: 8px;"">
+              <i
+                class="fas fa-hiking"
+                style="font-size: 28px; width: 24px; text-align: center; color: var(--secondary-color); margin-right: 10px;"
+              ></i>
+              <span style="color: var(--tertiary-color)">Hiking</span>
+            </div>
+            <div style="display: flex; align-items: center; margin-left: 8px; margin-top: 8px;">
+              <i
+                class="fas fa-theater-masks"
+                style="font-size: 20px; width: 20px; text-align: center; color: var(--secondary-color); margin-right: 14px;"
+              ></i>
+              <span style="color: var(--tertiary-color)">Improv Theater</span>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <style>
+        main {
+          color: var(--primary-color);
+          flex: 8.5;
+          padding: 0 25px;
+          background-image:
+            /* url(assets/img/triangles.png), */
+            linear-gradient(
+              180deg,
+              #222222 8.69%,
+              #262626 53.12%,
+              #1a1a1a 87.23%
+            );
+          background-repeat: repeat-y;
+        }
+        @media print {
+          main {
+            background: white;
+          }
+        }
+      </style>
+      <main>
+        <section style="margin: 40px 0;">
+          <h2 style="font-size: var(--heading-font-size);">
+            Main Tech Skills
+          </h2>
+
+          <style>
+            .tech-skills-list {
+              column-count: 3;
+              column-gap: 0;
+              margin-left: 10px;
+            }
+            @media (max-width: 1280px) {
+              .tech-skills-list {
+                column-count: 2;
+              }
+            }
+            @media (max-width: 768px) {
+              .tech-skills-list {
+                column-count: 1;
+              }
+            }
+            @media print {
+              .tech-skills-list {
+                column-count: 3;
+              }
+             .tech-skill-icon-wrapper {
+               transform: scale(0.8, 0.8);
+             }
+            }
+            .tech-skills-list-item {
+              display: flex;
+              align-items: center;
+              height: 30px;
+              /* border: 1px solid green; */
+              padding: 5px 0;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;
+            }
+            .tech-skill-icon-wrapper {
+              width: 50px;
+              /* margin-right: 15px; */
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .tech-skill-icon {
+              color: var(--secondary-color);
+              font-size: 30px;
+            }
+            .tech-skill-name {
+              color: var(--tertiary-color);
+              transition: color 200ms ease-out;
+            }
+            .tech-skill-name:hover {
+              color: var(--primary-color);
+            }
+          </style>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-html5"
+                  style="color: var(--secondary-color); font-size: 30px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                HTML5
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-css3-alt"
+                  style="color: var(--secondary-color); font-size: 30px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                CSS3
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-js"
+                  style="color: var(--secondary-color); font-size: 30px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                JavaScript
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <img
+                  src="assets/svg/es6.svg"
+                  class="img-icon"
+                  style="width: 27px;"
+                />
+              </div>
+              <span class="tech-skill-name">
+                ECMAScript (ES6, ES7)
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <img
+                  src="assets/svg/typescript.svg"
+                  class="img-icon"
+                  style="width: 27px;"
+                />
+              </div>
+              <span class="tech-skill-name">
+                TypeScript
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-node-js"
+                  style="color: var(--secondary-color); font-size: 30px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                NodeJS
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <img
+                  src="assets/svg/meteor-icon.svg"
+                  class="img-icon"
+                  style="width: 27px;"
+                />
+              </div>
+              <span class="tech-skill-name">
+                Meteor
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-react"
+                  style="color: var(--secondary-color); font-size: 30px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                React
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-react"
+                  style="color: var(--secondary-color); font-size: 30px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                React Native
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-git"
+                  style="color: var(--secondary-color); font-size: 27px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                Git
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-sass"
+                  style="color: var(--secondary-color); font-size: 27px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                SASS
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+                <div class="tech-skill-icon-wrapper">
+              <img
+                  src="assets/svg/bem.svg"
+                  class="img-icon"
+                  style="width: 27px;"
+                />
+                </div>
+              <span class="tech-skill-name">
+                BEM, Atomic Design, etc.
+              </span>
+            </li>
+            
+
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <img
+                  src="assets/svg/mongodb-icon.svg"
+                  class="img-icon"
+                  style="width: 27px;"
+                />
+              </div>
+              <span class="tech-skill-name">
+                MongoDB
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-figma"
+                  style="color: var(--secondary-color); font-size: 26px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                Figma
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <i
+                  class="fab fa-docker"
+                  style="color: var(--secondary-color); font-size: 26px;"
+                ></i>
+              </div>
+              <span class="tech-skill-name">
+                Docker
+              </span>
+            </li>
+            <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <img
+                  src="assets/svg/selenium.svg"
+                  class="img-icon"
+                  style="width: 27px;"
+                />
+              </div>
+              <span class="tech-skill-name">
+                Selenium
+              </span>
+            </li>
+            <!-- <li class="tech-skills-list-item">
+              <div class="tech-skill-icon-wrapper">
+                <img
+                  src="assets/svg/selenium.svg"
+                  class="img-icon"
+                  style="width: 27px;"
+                />
+              </div>
+              <span class="tech-skill-name">
+                GraphQL
+              </span>
+            </li> -->
+          </ul>
+        </section>
+
+        <style>
+          .other-skills-item {
+            color: var(--tertiary-color);
+          }
+        </style>
+        <section style="margin: 40px 0;">
+          <h2 style="font-size: var(--heading-font-size);">
+            Other Skills
+          </h2>
+          <ul style="list-style: disc; padding-left: 40px;">
+            <li class="other-skills-item">Team Leading</li>
+            <li class="other-skills-item">Strong Communication Skills</li>
+            <li class="other-skills-item">UI/UX</li>
+          </ul>
+        </section>
+
+        <style>
+          /****** Timeline Stuffs ******/
+          :root {
+            --timeline-width: 4px;
+            --timeline-point-diameter: calc(var(--timeline-width) * 6);
+            --timeline-offset-from-left: var(--timeline-point-diameter);
+            --timeline-li-offset-from-left: calc(
+              var(--timeline-offset-from-left) + 30px
+            );
+          }
+          @media (min-width: 1280px) {
+            :root {
+              --timeline-offset-from-left: calc(
+                var(--timeline-point-diameter) + 150px
+              );
+            }
+          }
+          @media print {
+            :root {
+              --timeline-width: 3px;
+            }
+          }
+          .timeline {
+            position: relative;
+          }
+          /* The actual "time" "line" */
+          .timeline::before {
+            content: "";
+            background: var(--primary-color);
+            position: absolute;
+            width: var(--timeline-width);
+            height: calc(100% + 10px);
+            transform: translateY(-10px);
+            top: 10px;
+            bottom: 0;
+            left: var(--timeline-offset-from-left);
+          }
+          /* arrow head (it's a bit of a hack due to hardcodedd values) */
+          .timeline::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: calc(var(--timeline-offset-from-left) - 3px);
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 16px solid white;
+          }
+          .timeline-point {
+            position: relative;
+          }
+          /* Timeline dots A.K.A. events */
+          .timeline-point::after {
+            content: "";
+            position: absolute;
+            box-sizing: border-box;
+            top: 0;
+            left: calc(
+              var(--timeline-offset-from-left) - var(--timeline-point-diameter) /
+                2 + var(--timeline-width) / 2 -
+                var(--timeline-li-offset-from-left)
+            );
+            height: var(--timeline-point-diameter);
+            width: var(--timeline-point-diameter);
+            border: var(--timeline-width) solid var(--primary-color);
+            border-radius: var(--timeline-point-diameter);
+            background: var(--secondary-color);
+          }
+          @media print {
+            .timeline-point::after {
+              background: #eee;
+            }
+          }
+          /****** End Timeline Stuffs ******/
+
+          .job-title {
+            font-size: 1.2rem;
+            margin: 0;
+          }
+          .time-period-wrapper {
+            display: inline-block;
+          }
+          .from-till {
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin: 5px 0 0 0;
+          }
+          .time-period {
+            font-size: 1.1rem;
+            font-weight: normal;
+            margin: 0 0 10px 0;
+            color: var(--tertiary-color);
+          }
+          @media (min-width: 1280px) {
+            .job-title {
+              margin-bottom: 5px;
+            }
+            .time-period-wrapper {
+              position: absolute;
+              width: var(--timeline-offset-from-left);
+              top: 0;
+              left: calc(
+                var(--timeline-li-offset-from-left) * -1 -
+                  var(--timeline-point-diameter)
+              );
+            }
+            .from-till {
+              text-align: right;
+              margin: 0;
+            }
+            .time-period {
+              text-align: center;
+              margin-left: 25px;
+            }
+          }
+        </style>
+        <section style="margin: 40px 0;">
+          <h2 style="font-size: var(--heading-font-size);">
+            Work Experience
+          </h2>
+          <ul class="timeline" style="margin: 30px 0;">
+              <li style="padding-left: var(--timeline-li-offset-from-left);">
+                  <h3
+                    style="font-size: 1.35rem; color: var(--secondary-color); margin: 5px 0;"
+                  >
+                    SIA &quot;Animus Project&quot;
+                  </h3>
+                  <ul>
+                      <li class="timeline-point" style="padding-bottom: 10px;">
+                          <h4 class="job-title">
+                            Lead Developer
+                          </h4>
+                          <div class="time-period-wrapper">
+                            <h5 class="from-till">
+                              Feb 2019 - Present
+                            </h5>
+                            <h6 class="time-period">
+                              1 year 8 months
+                            </h6>
+                          </div>
+                          <ul
+                            style="list-style: disc; padding-left: 20px; margin-bottom: 20px;"
+                          >
+                            <li style="color: var(--tertiary-color);">
+                              Mentored, taught good coding practices and did code reviews for 2 junior
+                              developers.
+                            </li>
+                            <li style="color: var(--tertiary-color);">
+                              Lead a small team in the development of airport emergency response software
+                              for use by airport security, police and firemen.
+                            </li>
+                            <!-- <li style="color: var(--tertiary-color);">
+                              Brought about the adoption of Figma software in the company to streamline visual design, UX design, UI development
+                            process as well as improve communication with clients.
+                            </li> -->
+                          </ul>
+                        </li>
+                    <li class="timeline-point" style="margin-bottom: 20px;">
+                      <h4 class="job-title">
+                        Software Developer
+                      </h4>
+                      <div class="time-period-wrapper">
+                        <h5 class="from-till">
+                          Apr 2017 - Feb 2019
+                        </h5>
+                        <h6 class="time-period">
+                          1 years 10 months
+                        </h6>
+                      </div>
+                      <ul
+                        style="list-style: disc; padding-left: 20px; margin-bottom: 20px;"
+                      >
+                        <li style="color: var(--tertiary-color);">
+                          Did frontend, backend and mobile development of 
+                          realtime IoT software, which lead to our client getting multiple large orders of said software
+                          and eventually got <a style="display: inline; color: var(--primary-color); text-decoration: underline;" target="_blank" href="https://www.iso.org/standard/62085.html">ISO 9001:2015</a> and <a style="display: inline; color: var(--primary-color); text-decoration: underline;" target="_blank" href="https://www.iso.org/standard/69724.html">ISO/IEC 24773-1:2019</a> certified.
+                        </li>
+                        <li style="color: var(--tertiary-color);">
+                          Various smaller projects, including development of custom worktime 
+                          tracking software, dashboards with data visualization, design/development of an API that calculates parking prices.
+                        </li>
+                        <li style="color: var(--tertiary-color);">
+                          Contributed to the improvement of user experience, software architecture, coding and team work practices.
+                        </li>
+                      </ul>
+                    </li>
+                    
+                  </ul>
+                </li>
+            <li
+              style="padding-left: var(--timeline-li-offset-from-left); margin-bottom: 20px;"
+            >
+              <h3
+                style="font-size: 1.35rem; color: var(--secondary-color); margin: 5px 0;"
+              >
+                VA/S &quot;Latvijas Dzelzceļš&quot;
+              </h3>
+
+              <ul>
+                  <li class="timeline-point" style="margin-bottom: 20px;">
+                      <h4 class="job-title">
+                        Software Developer
+                      </h4>
+                      <div class="time-period-wrapper">
+                        <h5 class="from-till">
+                          Jul 2016 - Apr 2017
+                        </h5>
+                        <h6 class="time-period">
+                          10 months
+                        </h6>
+                      </div>
+                      <ul
+                        style="list-style: disc; padding-left: 20px; margin-bottom: 20px;"
+                      >
+                        <li style="color: var(--tertiary-color);">
+                          Wrote automated regression tests for a web application.
+                          Participated in the development of an end to end testing framework for said software.
+                        </li>
+                        <li style="color: var(--tertiary-color);">
+                          Developed the frontend and backend of a new feature for an existing web app.
+                        </li>
+                      </ul>
+                    </li>
+                <li class="timeline-point" style="margin-bottom: 20px;">
+                  <h4 class="job-title">
+                    Intern
+                  </h4>
+                  <div class="time-period-wrapper">
+                    <h5 class="from-till">
+                      Jan 2016 - Jul 2016
+                    </h5>
+                    <h6 class="time-period">
+                      6 months
+                    </h6>
+                  </div>
+
+                  <ul
+                    style="list-style: disc; padding-left: 20px; margin-bottom: 20px;"
+                  >
+                    <li style="color: var(--tertiary-color);">
+                      Came up with test case scenarios and helped test a web application.
+                    </li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </li>
+            
+          </ul>
+        </section>
+
+        <section style="margin: 40px 0;">
+          <h2 style="font-size: var(--heading-font-size);">
+            Education
+          </h2>
+          <ul class="timeline">
+              <li
+              style="padding-left: var(--timeline-li-offset-from-left); padding-bottom: 10px;"
+            >
+              <h3
+                style="font-size: 1.35rem; color: var(--secondary-color); margin: 5px 0;"
+              >
+                Riga Technical College
+              </h3>
+
+              <div style="position: relative;">
+                <h4
+                  style="font-size: 1.2rem; margin: 0;"
+                  class="timeline-point"
+                >
+                  Technical Secondary Education Diploma, Computer Programming
+                </h4>
+
+                <div class="time-period-wrapper">
+                  <h5 class="from-till">
+                    2017
+                  </h5>
+                </div>
+              </div>
+            </li>
+            <li
+              style="padding-left: var(--timeline-li-offset-from-left); padding-bottom: 20px;"
+            >
+              <h3
+                style="font-size: 1.35rem; color: var(--secondary-color); margin: 5px 0;"
+              >
+                University of Latvia
+              </h3>
+              <div style="position: relative;">
+                <h4
+                  style="font-size: 1.2rem; margin: 0;"
+                  class="timeline-point"
+                >
+                  Bachelor's Degree, Computer Science (unfinished)
+                </h4>
+
+                <div class="time-period-wrapper">
+                  <h5 class="from-till">
+                    2014 - 2016
+                  </h5>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-92762035-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-92762035-1');
+    </script>
+
+  </body>
+</html>
